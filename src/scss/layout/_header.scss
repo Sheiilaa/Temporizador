@@ -1,1 +1,43 @@
-
+.header {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  transition: -5s ease-out all;
+  background-color: aquamarine;
+}
+.title {
+  margin-top: 30px;
+  font-family: "Maven Pro", sans-serif;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.simply-section {
+  background-color: beige;
+  width: 180px;
+  height: 180px;
+  margin: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.simply-amount {
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+}
+.simply-word {
+  font-weight: 300;
+  font-size: 30px;
+}

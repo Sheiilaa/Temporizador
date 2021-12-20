@@ -1,7 +1,7 @@
 simplyCountdown("#countdown", {
   year: 2022, // required
   month: 1, // required
-  day: 1, // required
+  day: 0, // required
   hours: 0, // Default is 0 [0-23] integer
   minutes: 0, // Default is 0 [0-59] integer
   seconds: 0, // Default is 0 [0-59] integer
@@ -18,6 +18,7 @@ simplyCountdown("#countdown", {
   // in case of inline set to false
   enableUtc: false, //Use UTC or not - default : false
   onEnd: function () {
+    document.getElementById("header").classList.add("hidden");
     return;
   }, //Callback on countdown end, put your own function here
   refresh: 1000, // default refresh every 1s
@@ -25,7 +26,7 @@ simplyCountdown("#countdown", {
   amountClass: "simply-amount", // amount css class
   wordClass: "simply-word", // word css class
   zeroPad: false,
-  countUp: true,
+  countUp: false,
 });
 
 // Also, you can init with already existing Javascript Object.
